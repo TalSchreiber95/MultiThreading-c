@@ -9,7 +9,7 @@ run: solution.o
 	gcc -o run solution.o -lm -lpthread -lrt
 
 solution.o: solution.c
-	gcc -g3 -c solution.c -o solution.o
+	gcc -g3 -c solution4.c -o solution.o
 
 
 clean: 
