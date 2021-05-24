@@ -6,11 +6,10 @@
 
 
 run: solution.o
-	gcc -o run solution.o -lm -lpthread -lrt
+	gcc -o solution solution.o -lm -lpthread
 
 solution.o: solution.c
-	gcc -g3 -c solution4.c -o solution.o
-
+	gcc -c solution.c -o solution.o
 
 clean: 
-	rm -f *.o run
+	rm -f *.o solution
